@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.mybatis.mapper.EmployeeMapper">
+    <select id="selectEmployeeById" resultType="com.atguigu.mybatis.pojo.Employee">
+        select id,last_name lastName,email,salary from tbl_employee where id=#{empId}
+    </select>
+    <!--定义添加员工信息-->
+    <insert id="insertEmployee" keyProperty="id" useGeneratedKeys="true">
+        insert INTO
+        tbl_employee(last_name,email,salary)
+        values
+        (#{lastName},#{email},#{salary})
+    </insert>
+
+    <delete id="deleteEmployeeById">
+        delete from
+        tbl_employee
+        where
+        id=#{empId}
+    </delete>
+<!--修改员工信息-->
+    <update id="updateEmployeeById">
+        update tbl_employee
+        set last_name = #{lastName},
+        email=#{email},
+        salary=#{salary}
+        where
+        id = #{id}
+    </update>
+    
+</mapper>
