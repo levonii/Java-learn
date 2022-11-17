@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="点我" id="btn01"/>
+<script>
+    document.getElementById("btn01").onclick = function () {
+        var arrs = new Array();
+        console.log(typeof arrs)
+        arrs[0] = 10;
+        arrs[1] = 101;
+        arrs[2] = 102;
+        arrs[3] = 103;
+        arrs.push(12);
+        arrs[20] = 111;
+        //取值
+        for (var i = 0; i < arrs.length; i++) {
+            console.log(arrs[i])
+        }
+        console.log(arrs[10])
+    }
+</script>
+</body>
+</html>

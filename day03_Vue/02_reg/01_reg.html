@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="按钮" onclick="regTest()">
+<script>
+    function regTest() {
+        /*
+        var reg=/o/;
+        var str = "Hello World";
+        //检测str字符串是否符合reg的要求
+        var b = reg.test(str);
+        alert(b);
+        //2.匹配提取
+        var regExpMatchArray = str.match(reg);
+        console.log(regExpMatchArray)
+        console.log(regExpMatchArray.length)
+        console.log(regExpMatchArray[0])*/
+        //密码的要求:
+        var passwordReg = /^[a-zA-Z0-9_@]{8,}$/;
+        var str = "admin1234";
+        var b=passwordReg.test(str);
+        alert(b)
+        //用户名的要求：
+        var usernameReg=/^[a-zA-Z0-9]{6,9}/
+    }
+</script>
+</body>
+</html>

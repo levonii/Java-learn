@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://G:/web-demo/....iml" filepath="G:/web-demo/....iml" />
+      <module fileurl="file://$PROJECT_DIR$/day01_HTML_CSS/day01_HTML_CSS.iml" filepath="$PROJECT_DIR$/day01_HTML_CSS/day01_HTML_CSS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day02_JavaScript/day02_JavaScript.iml" filepath="$PROJECT_DIR$/day02_JavaScript/day02_JavaScript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day03_Vue/day03_Vue.iml" filepath="$PROJECT_DIR$/day03_Vue/day03_Vue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc-java/jdbc-java.iml" filepath="$PROJECT_DIR$/jdbc-java/jdbc-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mybatis-demo/mybatis-demo.iml" filepath="$PROJECT_DIR$/../mybatis-demo/mybatis-demo.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+  <a href="http://baidu.com" @click.prevent="clickText">点击跳转到百度</a>
+    <form action="01_HelloWorld.html" method="" @submit="submitTest"/>
+    <input type="text" name="username"><br/>
+    <input type="submit"/>
+</div>
+<script>
+  new Vue({
+    el:"#app",
+    data:{},
+    methods:{
+      clickText:function (){
+        alert("跳转连接")
+        event.preventDefault();
+      },
+      submitTest:function (){
+          alert("表单即将被提交")
+      }
+    }
+  })
+</script>
+</body>
+</html>

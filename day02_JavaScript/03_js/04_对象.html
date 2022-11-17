@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="点我" id = "btn01"/>
+<script>
+    document.getElementById("btn01").onclick=function (){
+        var object01=new Object();
+        console.log(typeof object01);
+        object01.id=101;
+        object01.name="张三";
+        object01.abc="北京";
+        console.log(object01.name)
+        console.log(object01.id)
+        object01.eat=function (){
+            alert(this.name+"在eat");
+        }
+        object01.run=function (){
+            alert(this.abc+"到了");
+        }
+        object01.run()
+        object01.eat()
+
+        var obj02={
+            id:102,
+            name:"张三",
+            age:18,
+            eat:function (){
+                alert("eat")
+            }
+        }
+    }
+</script>
+</body>
+</html>

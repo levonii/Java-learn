@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="点我" id="btn01"/>
+<script>
+    document.getElementById("btn01").onclick = function () {
+        var json01={
+            id:103,
+            name:"王五",
+            age: 18,
+            address:"北京"
+        }
+        console.log(json01.id);
+        console.log(json01.name);
+        console.log(json01.age);
+        console.log(json01.address);
+        console.log("--------------------");
+        //2.稍微复杂json对象
+        var json02 ={
+            id:103,
+            name:"王五",
+            age: 18,
+            address:"北京",
+            computer:{
+                id:501,
+                brand:"联想",
+                price:5000
+            }
+        }
+        console.log(json02.id)
+        console.log(json02.name)
+        console.log(json02.computer.id)
+        console.log(json02.computer.brand)
+        console.log(json02.computer.price)
+
+        var json03 = [10,20,"java"];
+        for(var i=0;i<json03.length;i++){
+            console.log(json03[i])
+        }
+        var json04=[{
+            id:101,
+            name:"王yi",
+            age: 18,
+            address:"11"
+        },
+            {
+                id:102,
+                name:"王er",
+                age: 18,
+                address:"22"
+            },
+            {id:103,
+                name:"王san",
+                age: 18,
+                address:"33"}]
+        for (var i = 0; i < json04.length; i++) {
+            console.log(json04[i])
+            console.log(json04[i].id)
+        }
+        console.log("---------------------")
+        var json05={
+            id:101,
+            name:"张三",
+            computers:[{ id:501,
+                brand:"联想",
+                price:5000},
+                { id:501,
+                brand:"联想",
+                price:5000}]
+        }
+console.log(json05.id)
+        for (var i = 0; i < json05; i++) {
+            console.log(json05.computers[i].id)
+        }
+
+        var str = JSON.stringify(json05);
+        console.log(typeof str)
+
+        var parse = JSON.parse(str);
+        console.log(typeof parse)
+
+    }
+</script>
+</body>
+</html>

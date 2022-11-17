@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div01">
+    <b>这是div内容</b></div>
+<p>这是p内容</p>
+
+<input type="button" value="按钮" id="btn01">
+<script>
+    document.getElementById("btn01").onclick=function (){
+        var div01 = document.getElementById("div01");
+        var innerText = div01.innerText;
+        console.log(innerText)
+        console.log(typeof innerText)
+
+        var innerHTML = div01.innerHTML;
+        console.log(innerHTML)
+        console.log(typeof innerHTML)
+    }
+</script>
+
+</body>
+</html>
